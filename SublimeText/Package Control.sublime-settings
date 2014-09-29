@@ -1,0 +1,21 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"BeautifyRuby",
+		"BracketHighlighter",
+		"Emmet",
+		"Gherkin (Cucumber) Formatter",
+		"Git",
+		"GitGutter",
+		"Haml",
+		"Hammer Color Scheme",
+		"RubyEval",
+		"Sass",
+		"SideBarEnhancements",
+		"Sublime Bookmarks",
+		"SublimeCodeIntel",
+		"Theme - Afterglow",
+		"TrailingSpaces"
+	]
+}
