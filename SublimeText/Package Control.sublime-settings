@@ -1,20 +1,22 @@
 {
 	"installed_packages":
 	[
+		"4GL",
+		"Alignment",
 		"AdvancedNewFile",
 		"BeautifyRuby",
 		"BracketHighlighter",
+		"Cucumber"
 		"Emmet",
 		"Gherkin (Cucumber) Formatter",
 		"Git",
 		"GitGutter",
 		"Haml",
 		"Hammer Color Scheme",
-		"RubyEval",
 		"Sass",
 		"SideBarEnhancements",
 		"Sublime Bookmarks",
-		"SublimeCodeIntel",
+		"SublimeERB",
 		"Theme - Afterglow",
 		"TrailingSpaces"
 	]
