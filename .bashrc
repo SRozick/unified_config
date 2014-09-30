@@ -1,8 +1,4 @@
-
 # use source ~/.bashrc to reload without logging out
-
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
 
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -27,11 +23,8 @@ RI="--format ansi -T"
 PSQL_EDITOR='vim -c"setf sql"'
 
 # set CLI colors
-# see man ls for more details
 CLICOLOR=1
 export LSCOLORS="Cxcxhxdxbxegedabagacad"
-
-
 
 # set prompt behavior
 [ -z "$PS1" ] || stty -ixon
@@ -43,12 +36,6 @@ if [ -x /usr/bin/dircolors ]; then
     [ -r ~/.dircolors ] && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
-#Hashrocket git status prompt (this did not work)
-#if [ -f '/usr/local/etc/bash_completion.d/git-completion.bash' ]; then
-#  source '/usr/local/etc/bash_completion.d/git-completion.bash'
-#fi
-# [[ $- == *i* ]]   &&   . ~/git-prompt/git-prompt.sh
-
 # Git Prompt configuration and sourcing
 # see https://github.com/magicmonty/bash-git-prompt
 GIT_PROMPT_ONLY_IN_REPO=1
@@ -56,3 +43,8 @@ GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_START="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$"
 GIT_PROMPT_END="\n\s:\v \033[01;00m\]\[\d \A\[\033[00m\] \$ "
 source /usr/local/opt/bash-git-prompt/share/gitprompt.sh
+
+export PATH=/usr/local/bin:$PATH
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+echo "Applied .bashrc."
